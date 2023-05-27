@@ -9,6 +9,12 @@
 </head>
 <body>
 
+<audio id="clickSound1" src="./sound/グー.m4a" preload="auto"></audio>
+<audio id="clickSound2" src="./sound/チョキ.m4a" preload="auto"></audio>
+<audio id="clickSound3" src="./sound/パー.m4a" preload="auto"></audio>
+<audio id="clickSound4" src="./sound/勝ち.m4a" preload="auto"></audio> 
+<audio id="clickSound5" src="./sound/負け.m4a" preload="auto"></audio>
+<audio id="clickSound6" src="./sound/あいこ.m4a" preload="auto"></audio>
 
 
 <main>
@@ -39,6 +45,10 @@ $("#gu_btn").on("click", function() {
   setTimeout(function() {
     $("#judgement").text("あいこ");
   }, 500);
+    setTimeout(function() {
+          var audioElement = document.getElementById('clickSound6');
+  audioElement.play();
+  }, 500);
 } else if (hands == 2) {
   $("#pc_hand_img img").attr("src", "./img/PCチョキ.jpg");
   setTimeout(function() {
@@ -47,6 +57,10 @@ $("#gu_btn").on("click", function() {
   setTimeout(function() {
     $("#judgement").text("勝ち");
   }, 500);
+      setTimeout(function() {
+          var audioElement = document.getElementById('clickSound4');
+  audioElement.play();
+  }, 500);
 } else {
   $("#pc_hand_img img").attr("src", "./img/PCパー.jpg");
   setTimeout(function() {
@@ -54,6 +68,10 @@ $("#gu_btn").on("click", function() {
   }, 000);
   setTimeout(function() {
     $("#judgement").text("負け");
+      }, 500);
+        setTimeout(function() {
+          var audioElement = document.getElementById('clickSound5');
+  audioElement.play();
   }, 500);
 }
   $(this).addClass("enlarge");
@@ -63,6 +81,9 @@ $("#gu_btn").on("click", function() {
   setTimeout(function() {
     $("#judgement").text(" ");
   }, 2000);
+
+    var audioElement = document.getElementById('clickSound1');
+  audioElement.play();
 });
 
 $("#cho_btn").on("click", function() {
@@ -76,6 +97,10 @@ $("#cho_btn").on("click", function() {
   setTimeout(function() {
     $("#judgement").text("負け");
   }, 500);
+      setTimeout(function() {
+          var audioElement = document.getElementById('clickSound5');
+  audioElement.play();
+  }, 500);
 } else if (hands == 2) {
   $("#pc_hand_img img").attr("src", "./img/PCチョキ.jpg");
   setTimeout(function() {
@@ -83,6 +108,10 @@ $("#cho_btn").on("click", function() {
   }, 000);
   setTimeout(function() {
     $("#judgement").text("あいこ");
+  }, 500);
+      setTimeout(function() {
+          var audioElement = document.getElementById('clickSound6');
+  audioElement.play();
   }, 500);
 } else {
   $("#pc_hand_img img").attr("src", "./img/PCパー.jpg");
@@ -92,6 +121,10 @@ $("#cho_btn").on("click", function() {
   setTimeout(function() {
     $("#judgement").text("勝ち");
   }, 500);
+      setTimeout(function() {
+          var audioElement = document.getElementById('clickSound4');
+  audioElement.play();
+  }, 500);
 }
 $(this).addClass("enlarge");
   setTimeout(() => $(this).removeClass("enlarge"), 2000); 
@@ -100,6 +133,9 @@ $(this).addClass("enlarge");
   setTimeout(function() {
     $("#judgement").text(" ");
   }, 2000);
+
+      var audioElement = document.getElementById('clickSound2');
+  audioElement.play();
 });
 
 $("#par_btn").on("click", function() {
@@ -113,6 +149,10 @@ $("#par_btn").on("click", function() {
   setTimeout(function() {
     $("#judgement").text("勝ち");
   }, 500);
+      setTimeout(function() {
+          var audioElement = document.getElementById('clickSound4');
+  audioElement.play();
+  }, 500);
 } else if (hands == 2) {
   $("#pc_hand_img img").attr("src", "./img/PCチョキ.jpg");
   setTimeout(function() {
@@ -120,6 +160,10 @@ $("#par_btn").on("click", function() {
   }, 000);
   setTimeout(function() {
     $("#judgement").text("負け");
+  }, 500);
+      setTimeout(function() {
+          var audioElement = document.getElementById('clickSound5');
+  audioElement.play();
   }, 500);
 } else {
   $("#pc_hand_img img").attr("src", "./img/PCパー.jpg");
@@ -129,6 +173,10 @@ $("#par_btn").on("click", function() {
   setTimeout(function() {
     $("#judgement").text("あいこ");
   }, 500);
+      setTimeout(function() {
+          var audioElement = document.getElementById('clickSound6');
+  audioElement.play();
+  }, 500);
 }
 $(this).addClass("enlarge");
   setTimeout(() => $(this).removeClass("enlarge"), 2000); 
@@ -137,6 +185,9 @@ $(this).addClass("enlarge");
   setTimeout(function() {
     $("#judgement").text(" ");
   }, 2000);
+
+      var audioElement = document.getElementById('clickSound3');
+  audioElement.play();
 });
 
 
