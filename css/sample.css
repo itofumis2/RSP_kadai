@@ -1,0 +1,94 @@
+body{
+    margin:0;
+    padding:0;
+    text-align:left;
+    font-size: 32px;
+    background-color: #f9f9f9;
+
+}
+header{
+    background-color: #f9f9f9;
+    /* border-bottom: 1px solid #ccc; */
+    text-align: center;
+}
+main{
+    /* border-bottom:1px solid #ccc; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family:Arial unicode ms, Arial, Helvetica, sans-serif;
+    color: rgb(71, 62, 56);
+
+}
+footer{
+    background-color: #f9f9f9;
+    /* border-bottom:1px solid #ccc; */
+    text-align: center;
+}
+p{
+    font-size:200%;
+    text-align: center;
+    border-bottom:1px solid #f6f6f6;
+    height:200px;
+}
+ul{
+    padding: 0;
+    /* border-top: 1px solid #000000; */
+    display:table;  /* 定義 */
+    table-layout: fixed;
+    width:100%;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+li{
+    text-align: center;
+    list-style-type:none;
+    /* border: 1px solid #666; */
+    background-color: #f9f9f9;
+    display:table-cell;  /* 定義 */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+li:hover{
+    /* background: #d5d5d5; */
+    color:#fff;
+}
+
+#gu_btn img, #cho_btn img, #par_btn img, #pc_hand_img img {
+    width: 120px;    
+    height: auto;       
+}
+/* 
+#gu_btn img, #cho_btn img, #par_btn img {
+    transition: transform 0.5s ease-in-out;
+}
+
+#gu_btn img:hover, #cho_btn img:hover, #par_btn img:hover {
+    transform: scale(1.2);
+}
+ */
+
+#pc_hand_img {
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #judgement {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .enlarge {
+    transition: all 0.01s ease;
+    transform: scale(3.0);
+  }
+  

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<script src="js/jquery-2.1.3.min.js"></script>
+<link rel="stylesheet" href="css/sample.css">
+<title>RSP</title>
+</head>
+<body>
+
+
+
+<main>
+  <div id="pc_hand_img"><img src="./img/PCグー.jpg" alt="PC hand"></span></div>
+  <div id="judgement">さいしょはグー</div>  
+  <ul>
+    <li id="gu_btn"><img src="./img/グー.jpg" alt="Rock"></li>
+    <li id="cho_btn"><img src="./img/チョキ.jpg" alt="Scissors"></li>
+    <li id="par_btn"><img src="./img/パー.jpg" alt="Paper"></li>
+  </ul>
+</main>
+
+<footer></footer>
+<script>
+//じゃんけん用のSCRIPTを書いてください
+
+
+let mine = 1
+
+$("#gu_btn").on("click", function() {
+  mine = 1
+  let hands = Math.ceil(Math.random()*3);
+  if (hands == 1) {
+  $("#pc_hand_img").attr("src", "./img/PCグー.jpg");
+  setTimeout(function() {
+    $("#judgement").text(" ");
+  }, 000);
+  setTimeout(function() {
+    $("#judgement").text("あいこ");
+  }, 500);
+} else if (hands == 2) {
+  $("#pc_hand_img img").attr("src", "./img/PCチョキ.jpg");
+  setTimeout(function() {
+    $("#judgement").text(" ");
+  }, 000);
+  setTimeout(function() {
+    $("#judgement").text("勝ち");
+  }, 500);
+} else {
+  $("#pc_hand_img img").attr("src", "./img/PCパー.jpg");
+  setTimeout(function() {
+    $("#judgement").text(" ");
+  }, 000);
+  setTimeout(function() {
+    $("#judgement").text("負け");
+  }, 500);
+}
+  $(this).addClass("enlarge");
+  setTimeout(() => $(this).removeClass("enlarge"), 2000); 
+  $("#pc_hand_img img").addClass("enlarge");
+  setTimeout(() => $("#pc_hand_img img").removeClass("enlarge"), 2000); 
+  setTimeout(function() {
+    $("#judgement").text(" ");
+  }, 2000);
+});
+
+$("#cho_btn").on("click", function() {
+  mine = 2
+  let hands = Math.ceil(Math.random()*3);
+  if (hands == 1) {
+  $("#pc_hand_img img").attr("src", "./img/PCグー.jpg");
+  setTimeout(function() {
+    $("#judgement").text(" ");
+  }, 000);
+  setTimeout(function() {
+    $("#judgement").text("負け");
+  }, 500);
+} else if (hands == 2) {
+  $("#pc_hand_img img").attr("src", "./img/PCチョキ.jpg");
+  setTimeout(function() {
+    $("#judgement").text(" ");
+  }, 000);
+  setTimeout(function() {
+    $("#judgement").text("あいこ");
+  }, 500);
+} else {
+  $("#pc_hand_img img").attr("src", "./img/PCパー.jpg");
+  setTimeout(function() {
+    $("#judgement").text(" ");
+  }, 000);
+  setTimeout(function() {
+    $("#judgement").text("勝ち");
+  }, 500);
+}
+$(this).addClass("enlarge");
+  setTimeout(() => $(this).removeClass("enlarge"), 2000); 
+  $("#pc_hand_img img").addClass("enlarge");
+  setTimeout(() => $("#pc_hand_img img").removeClass("enlarge"), 2000); 
+  setTimeout(function() {
+    $("#judgement").text(" ");
+  }, 2000);
+});
+
+$("#par_btn").on("click", function() {
+  mine = 3
+  let hands = Math.ceil(Math.random()*3);
+  if (hands == 1) {
+  $("#pc_hand_img img").attr("src", "./img/PCグー.jpg");
+  setTimeout(function() {
+    $("#judgement").text(" ");
+  }, 000);
+  setTimeout(function() {
+    $("#judgement").text("勝ち");
+  }, 500);
+} else if (hands == 2) {
+  $("#pc_hand_img img").attr("src", "./img/PCチョキ.jpg");
+  setTimeout(function() {
+    $("#judgement").text(" ");
+  }, 000);
+  setTimeout(function() {
+    $("#judgement").text("負け");
+  }, 500);
+} else {
+  $("#pc_hand_img img").attr("src", "./img/PCパー.jpg");
+  setTimeout(function() {
+    $("#judgement").text(" ");
+  }, 000);
+  setTimeout(function() {
+    $("#judgement").text("あいこ");
+  }, 500);
+}
+$(this).addClass("enlarge");
+  setTimeout(() => $(this).removeClass("enlarge"), 2000); 
+  $("#pc_hand_img img").addClass("enlarge");
+  setTimeout(() => $("#pc_hand_img img").removeClass("enlarge"), 2000); 
+  setTimeout(function() {
+    $("#judgement").text(" ");
+  }, 2000);
+});
+
+
+
+
+    
+    
+    
+
+</script>
+</body>
+</html>
