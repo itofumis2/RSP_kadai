@@ -53,9 +53,11 @@ $("#gu_btn").on("click", function() {
   $("#pc_hand_img").children("img").attr("src", "./img/PCcho.png");
   setTimeout(function() {
     $("#judgement").text(" ");
+    $("#judgement").removeClass("win");
   }, 000);
   setTimeout(function() {
     $("#judgement").text("勝ち");
+    $("#judgement").addClass("win");
   }, 500);
       setTimeout(function() {
           var audioElement = document.getElementById('clickSound4');
@@ -117,9 +119,11 @@ $("#cho_btn").on("click", function() {
   $("#pc_hand_img").children("img").attr("src", "./img/PCpar.png");
   setTimeout(function() {
     $("#judgement").text(" ");
+    $("#judgement").removeClass("win");
   }, 000);
   setTimeout(function() {
     $("#judgement").text("勝ち");
+    $("#judgement").addClass("win");
   }, 500);
       setTimeout(function() {
           var audioElement = document.getElementById('clickSound4');
@@ -145,9 +149,11 @@ $("#par_btn").on("click", function() {
   $("#pc_hand_img").children("img").attr("src", "./img/PCgu.png");
   setTimeout(function() {
     $("#judgement").text(" ");
+    $("#judgement").removeClass("win");
   }, 000);
   setTimeout(function() {
     $("#judgement").text("勝ち");
+    $("#judgement").addClass("win");
   }, 500);
       setTimeout(function() {
           var audioElement = document.getElementById('clickSound4');

@@ -92,3 +92,6 @@ li:hover{
     transform: scale(3.0);
   }
   
+  #judgement.win {
+    color: rgb(146, 32, 32);  
+}
