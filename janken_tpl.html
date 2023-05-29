@@ -9,21 +9,21 @@
 </head>
 <body>
 
-<audio id="clickSound1" src="./sound/グー.m4a" preload="auto"></audio>
-<audio id="clickSound2" src="./sound/チョキ.m4a" preload="auto"></audio>
-<audio id="clickSound3" src="./sound/パー.m4a" preload="auto"></audio>
+<audio id="clickSound1" src="./sound/gu.m4a" preload="auto"></audio>
+<audio id="clickSound2" src="./sound/cho.m4a" preload="auto"></audio>
+<audio id="clickSound3" src="./sound/par.m4a" preload="auto"></audio>
 <audio id="clickSound4" src="./sound/勝ち.m4a" preload="auto"></audio> 
 <audio id="clickSound5" src="./sound/負け.m4a" preload="auto"></audio>
 <audio id="clickSound6" src="./sound/あいこ.m4a" preload="auto"></audio>
 
 
 <main>
-  <div id="pc_hand_img"><img src="./img/PCグー.png" alt="PC hand"></span></div>
+  <div id="pc_hand_img"><img src="./img/PCgu.png" alt="PC hand"></span></div>
   <div id="judgement">さいしょはグー</div>  
   <ul>
-    <li id="gu_btn"><img src="./img/グー.png" alt="Rock"></li>
-    <li id="cho_btn"><img src="./img/チョキ.png" alt="Scissors"></li>
-    <li id="par_btn"><img src="./img/パー.png" alt="Paper"></li>
+    <li id="gu_btn"><img src="./img/gu.png" alt="Rock"></li>
+    <li id="cho_btn"><img src="./img/cho.png" alt="Scissors"></li>
+    <li id="par_btn"><img src="./img/par.png" alt="Paper"></li>
   </ul>
 </main>
 
@@ -38,7 +38,7 @@ $("#gu_btn").on("click", function() {
   mine = 1
   let hands = Math.ceil(Math.random()*3);
   if (hands == 1) {
-  $("#pc_hand_img").attr("src", "./img/PCグー.png");
+  $("#pc_hand_img").children("img").attr("src", "./img/PCgu.png");
   setTimeout(function() {
     $("#judgement").text(" ");
   }, 000);
@@ -50,7 +50,7 @@ $("#gu_btn").on("click", function() {
   audioElement.play();
   }, 500);
 } else if (hands == 2) {
-  $("#pc_hand_img img").attr("src", "./img/PCチョキ.png");
+  $("#pc_hand_img").children("img").attr("src", "./img/PCcho.png");
   setTimeout(function() {
     $("#judgement").text(" ");
   }, 000);
@@ -62,7 +62,7 @@ $("#gu_btn").on("click", function() {
   audioElement.play();
   }, 500);
 } else {
-  $("#pc_hand_img img").attr("src", "./img/PCパー.png");
+  $("#pc_hand_img").children("img").attr("src", "./img/PCpar.png");
   setTimeout(function() {
     $("#judgement").text(" ");
   }, 000);
@@ -90,7 +90,7 @@ $("#cho_btn").on("click", function() {
   mine = 2
   let hands = Math.ceil(Math.random()*3);
   if (hands == 1) {
-  $("#pc_hand_img img").attr("src", "./img/PCグー.png");
+  $("#pc_hand_img").children("img").attr("src", "./img/PCgu.png");
   setTimeout(function() {
     $("#judgement").text(" ");
   }, 000);
@@ -102,7 +102,7 @@ $("#cho_btn").on("click", function() {
   audioElement.play();
   }, 500);
 } else if (hands == 2) {
-  $("#pc_hand_img img").attr("src", "./img/PCチョキ.png");
+  $("#pc_hand_img").children("img").attr("src", "./img/PCcho.png");
   setTimeout(function() {
     $("#judgement").text(" ");
   }, 000);
@@ -114,7 +114,7 @@ $("#cho_btn").on("click", function() {
   audioElement.play();
   }, 500);
 } else {
-  $("#pc_hand_img img").attr("src", "./img/PCパー.png");
+  $("#pc_hand_img").children("img").attr("src", "./img/PCpar.png");
   setTimeout(function() {
     $("#judgement").text(" ");
   }, 000);
@@ -142,7 +142,7 @@ $("#par_btn").on("click", function() {
   mine = 3
   let hands = Math.ceil(Math.random()*3);
   if (hands == 1) {
-  $("#pc_hand_img img").attr("src", "./img/PCグー.png");
+  $("#pc_hand_img").children("img").attr("src", "./img/PCgu.png");
   setTimeout(function() {
     $("#judgement").text(" ");
   }, 000);
@@ -154,7 +154,7 @@ $("#par_btn").on("click", function() {
   audioElement.play();
   }, 500);
 } else if (hands == 2) {
-  $("#pc_hand_img img").attr("src", "./img/PCチョキ.png");
+  $("#pc_hand_img").children("img").attr("src", "./img/PCcho.png");
   setTimeout(function() {
     $("#judgement").text(" ");
   }, 000);
@@ -166,7 +166,7 @@ $("#par_btn").on("click", function() {
   audioElement.play();
   }, 500);
 } else {
-  $("#pc_hand_img img").attr("src", "./img/PCパー.png");
+  $("#pc_hand_img").children("img").attr("src", "./img/PCpar.png");
   setTimeout(function() {
     $("#judgement").text(" ");
   }, 000);
